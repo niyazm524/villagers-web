@@ -1,0 +1,167 @@
+[
+    {
+        "Profession": "Unemployed",
+        "Job site block": "None",
+        "Desert": "/images/villagers/Unemployed/Desert.png",
+        "Jungle": "/images/villagers/Unemployed/Jungle.png",
+        "Plains": "/images/villagers/Unemployed/Plains.png",
+        "Savanna": "/images/villagers/Unemployed/Savanna.png",
+        "Snow": "/images/villagers/Unemployed/Snow.png",
+        "Swamp": "/images/villagers/Unemployed/Swamp.png",
+        "Taiga": "/images/villagers/Unemployed/Taiga.png"
+    },
+    {
+        "Profession": "Nitwit",
+        "Job site block": "None",
+        "Desert": "/images/villagers/Nitwit/Desert.png",
+        "Jungle": "/images/villagers/Nitwit/Jungle.png",
+        "Plains": "/images/villagers/Nitwit/Plains.png",
+        "Savanna": "/images/villagers/Nitwit/Savanna.png",
+        "Snow": "/images/villagers/Nitwit/Snow.png",
+        "Swamp": "/images/villagers/Nitwit/Swamp.png",
+        "Taiga": "/images/villagers/Nitwit/Taiga.png"
+    },
+    {
+        "Profession": "Armorer",
+        "Job site block": "Blast Furnace",
+        "Desert": "/images/villagers/Armorer/Desert.png",
+        "Jungle": "/images/villagers/Armorer/Jungle.png",
+        "Plains": "/images/villagers/Armorer/Plains.png",
+        "Savanna": "/images/villagers/Armorer/Savanna.png",
+        "Snow": "/images/villagers/Armorer/Snow.png",
+        "Swamp": "/images/villagers/Armorer/Swamp.png",
+        "Taiga": "/images/villagers/Armorer/Taiga.png"
+    },
+    {
+        "Profession": "Butcher",
+        "Job site block": "Smoker",
+        "Desert": "/images/villagers/Butcher/Desert.png",
+        "Jungle": "/images/villagers/Butcher/Jungle.png",
+        "Plains": "/images/villagers/Butcher/Plains.png",
+        "Savanna": "/images/villagers/Butcher/Savanna.png",
+        "Snow": "/images/villagers/Butcher/Snow.png",
+        "Swamp": "/images/villagers/Butcher/Swamp.png",
+        "Taiga": "/images/villagers/Butcher/Taiga.png"
+    },
+    {
+        "Profession": "Cartographer",
+        "Job site block": "Cartography Table",
+        "Desert": "/images/villagers/Cartographer/Desert.png",
+        "Jungle": "/images/villagers/Cartographer/Jungle.png",
+        "Plains": "/images/villagers/Cartographer/Plains.png",
+        "Savanna": "/images/villagers/Cartographer/Savanna.png",
+        "Snow": "/images/villagers/Cartographer/Snow.png",
+        "Swamp": "/images/villagers/Cartographer/Swamp.png",
+        "Taiga": "/images/villagers/Cartographer/Taiga.png"
+    },
+    {
+        "Profession": "Cleric",
+        "Job site block": "Brewing Stand",
+        "Desert": "/images/villagers/Cleric/Desert.png",
+        "Jungle": "/images/villagers/Cleric/Jungle.png",
+        "Plains": "/images/villagers/Cleric/Plains.png",
+        "Savanna": "/images/villagers/Cleric/Savanna.png",
+        "Snow": "/images/villagers/Cleric/Snow.png",
+        "Swamp": "/images/villagers/Cleric/Swamp.png",
+        "Taiga": "/images/villagers/Cleric/Taiga.png"
+    },
+    {
+        "Profession": "Farmer",
+        "Job site block": "Composter",
+        "Desert": "/images/villagers/Farmer/Desert.png",
+        "Jungle": "/images/villagers/Farmer/Jungle.png",
+        "Plains": "/images/villagers/Farmer/Plains.png",
+        "Savanna": "/images/villagers/Farmer/Savanna.png",
+        "Snow": "/images/villagers/Farmer/Snow.png",
+        "Swamp": "/images/villagers/Farmer/Swamp.png",
+        "Taiga": "/images/villagers/Farmer/Taiga.png"
+    },
+    {
+        "Profession": "Fisherman",
+        "Job site block": "Barrel",
+        "Desert": "/images/villagers/Fisherman/Desert.png",
+        "Jungle": "/images/villagers/Fisherman/Jungle.png",
+        "Plains": "/images/villagers/Fisherman/Plains.png",
+        "Savanna": "/images/villagers/Fisherman/Savanna.png",
+        "Snow": "/images/villagers/Fisherman/Snow.png",
+        "Swamp": "/images/villagers/Fisherman/Swamp.png",
+        "Taiga": "/images/villagers/Fisherman/Taiga.png"
+    },
+    {
+        "Profession": "Fletcher",
+        "Job site block": "Fletching Table",
+        "Desert": "/images/villagers/Fletcher/Desert.png",
+        "Jungle": "/images/villagers/Fletcher/Jungle.png",
+        "Plains": "/images/villagers/Fletcher/Plains.png",
+        "Savanna": "/images/villagers/Fletcher/Savanna.png",
+        "Snow": "/images/villagers/Fletcher/Snow.png",
+        "Swamp": "/images/villagers/Fletcher/Swamp.png",
+        "Taiga": "/images/villagers/Fletcher/Taiga.png"
+    },
+    {
+        "Profession": "Leatherworker",
+        "Job site block": "Cauldron",
+        "Desert": "/images/villagers/Leatherworker/Desert.png",
+        "Jungle": "/images/villagers/Leatherworker/Jungle.png",
+        "Plains": "/images/villagers/Leatherworker/Plains.png",
+        "Savanna": "/images/villagers/Leatherworker/Savanna.png",
+        "Snow": "/images/villagers/Leatherworker/Snow.png",
+        "Swamp": "/images/villagers/Leatherworker/Swamp.png",
+        "Taiga": "/images/villagers/Leatherworker/Taiga.png"
+    },
+    {
+        "Profession": "Librarian",
+        "Job site block": "Lectern",
+        "Desert": "/images/villagers/Librarian/Desert.png",
+        "Jungle": "/images/villagers/Librarian/Jungle.png",
+        "Plains": "/images/villagers/Librarian/Plains.png",
+        "Savanna": "/images/villagers/Librarian/Savanna.png",
+        "Snow": "/images/villagers/Librarian/Snow.png",
+        "Swamp": "/images/villagers/Librarian/Swamp.png",
+        "Taiga": "/images/villagers/Librarian/Taiga.png"
+    },
+    {
+        "Profession": "Mason",
+        "Job site block": "Stonecutter",
+        "Desert": "/images/villagers/Mason/Desert.png",
+        "Jungle": "/images/villagers/Mason/Jungle.png",
+        "Plains": "/images/villagers/Mason/Plains.png",
+        "Savanna": "/images/villagers/Mason/Savanna.png",
+        "Snow": "/images/villagers/Mason/Snow.png",
+        "Swamp": "/images/villagers/Mason/Swamp.png",
+        "Taiga": "/images/villagers/Mason/Taiga.png"
+    },
+    {
+        "Profession": "Shepherd",
+        "Job site block": "Loom",
+        "Desert": "/images/villagers/Shepherd/Desert.png",
+        "Jungle": "/images/villagers/Shepherd/Jungle.png",
+        "Plains": "/images/villagers/Shepherd/Plains.png",
+        "Savanna": "/images/villagers/Shepherd/Savanna.png",
+        "Snow": "/images/villagers/Shepherd/Snow.png",
+        "Swamp": "/images/villagers/Shepherd/Swamp.png",
+        "Taiga": "/images/villagers/Shepherd/Taiga.png"
+    },
+    {
+        "Profession": "Toolsmith",
+        "Job site block": "Smithing Table",
+        "Desert": "/images/villagers/Toolsmith/Desert.png",
+        "Jungle": "/images/villagers/Toolsmith/Jungle.png",
+        "Plains": "/images/villagers/Toolsmith/Plains.png",
+        "Savanna": "/images/villagers/Toolsmith/Savanna.png",
+        "Snow": "/images/villagers/Toolsmith/Snow.png",
+        "Swamp": "/images/villagers/Toolsmith/Swamp.png",
+        "Taiga": "/images/villagers/Toolsmith/Taiga.png"
+    },
+    {
+        "Profession": "Weaponsmith",
+        "Job site block": "Grindstone",
+        "Desert": "/images/villagers/Weaponsmith/Desert.png",
+        "Jungle": "/images/villagers/Weaponsmith/Jungle.png",
+        "Plains": "/images/villagers/Weaponsmith/Plains.png",
+        "Savanna": "/images/villagers/Weaponsmith/Savanna.png",
+        "Snow": "/images/villagers/Weaponsmith/Snow.png",
+        "Swamp": "/images/villagers/Weaponsmith/Swamp.png",
+        "Taiga": "/images/villagers/Weaponsmith/Taiga.png"
+    }
+]
