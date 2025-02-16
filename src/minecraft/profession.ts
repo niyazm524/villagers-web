@@ -7,7 +7,7 @@ export function translateProfession(prof:string | null | undefined) {
   return translations.ru[`entity.minecraft.villager.${def}`]
 }
 
-const capitalize = s => (s && String(s[0]).toUpperCase() + String(s).slice(1)) || ""
+const capitalize = s => (s && String(s[0]).toUpperCase() + String(s).slice(1)) || ""     
 
 export function professionPicture(villager: Villager) {
   let prof = capitalize(villager.VillagerData?.profession?.replace('minecraft:', '') || 'Unemployed');
