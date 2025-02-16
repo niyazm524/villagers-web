@@ -7,18 +7,30 @@ function itemSearchIndex(item: any) {
   const name = translation[`item.minecraft.${id}`]
   const enchant = item.components?.['minecraft:stored_enchantments']?.levels;
   if(enchant) {
-    const eid = Object.keys(enchant)[0].replace('minecraft:', '')
+    const eid = Object.keys(enchant)[0].replace('minecraft:', '');
+    if(eid) {
+      const eName = translation[`enchantment.minecraft.${eid}`];
+      if(eName) {
+        return `${name} (${eName})`
+      }
+    }
   }
+  return name;
 }
 
 export function buildSearchIndex(v: Villager) {
   const profession = translateProfession(v.VillagerData?.profession);
-  
+
   const offers = v.Offers?.Recipes?.map(r => {
-    
+    return [
+      itemSearchIndex(r.buy),
+      r.buyB ? itemSearchIndex(r.buyB) : null,
+      r.sell,
+    ].filter(Boolean).join(', ')
   })
-  
+
   return [
-    profession
+    profession,
+    ...(offers || []),
   ].filter(Boolean).join(' ').toLowerCase();
 }

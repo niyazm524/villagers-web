@@ -40,6 +40,9 @@ console.log(villagers);
     </main>
 </template>
 <style lang="scss">
+main {
+  max-width: 600px;
+}
 .search {
     display: block;
     width: 100%;
