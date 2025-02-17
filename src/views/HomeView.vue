@@ -15,6 +15,14 @@ const villagers = exported.map(it => {
 
 const searchModel = ref("");
 
+const filteredOnly = computed(() => {
+  const trimmed = searchModel.value.trim().toLowerCase();
+  if (!trimmed.length) return [];
+  return villagers.filter(v => {
+    return v.search.includes(trimmed);
+  });
+})
+
 const filteredVillagers = computed(() => {
     const trimmed = searchModel.value.trim().toLowerCase();
     if (!trimmed.length) return villagers;
@@ -28,7 +36,7 @@ console.log(villagers);
 
 <template>
     <main>
-        <VillagersMap :villagers="filteredVillagers" />
+        <VillagersMap :villagers="villagers" :filter="filteredOnly" />
         <input type="search" class="search" v-model="searchModel" />
         <div class="villagers-list">
             <VillagerListItem

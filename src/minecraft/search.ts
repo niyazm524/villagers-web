@@ -3,7 +3,7 @@ import {translateProfession} from '@/minecraft/profession';
 import translation from '@/minecraft/ru.json'
 
 function itemSearchIndex(item: any) {
-  const id = item.id.replace('minecraft:')
+  const id = item.id.replace('minecraft:', '')
   const name = translation[`item.minecraft.${id}`]
   const enchant = item.components?.['minecraft:stored_enchantments']?.levels;
   if(enchant) {
@@ -25,7 +25,7 @@ export function buildSearchIndex(v: Villager) {
     return [
       itemSearchIndex(r.buy),
       r.buyB ? itemSearchIndex(r.buyB) : null,
-      r.sell,
+      itemSearchIndex(r.sell),
     ].filter(Boolean).join(', ')
   })
 

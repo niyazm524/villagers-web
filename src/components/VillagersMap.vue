@@ -5,6 +5,7 @@ import {professionPicture} from '@/minecraft/profession';
 
 const props = defineProps<{
   villagers: Villager[];
+  filter: Villager[];
 }>()
 
 const boundingBox = {
@@ -24,7 +25,6 @@ for (const villager of props.villagers) {
   boundingBox.right = Math.max(posX, boundingBox.right);
 }
 
-console.log(boundingBox);
 
 const scale = ref(1);
 const containerRef = ref<any>();
@@ -36,7 +36,7 @@ function setInitialScale(cont: HTMLElement) {
   const height = boundingBox.bottom - boundingBox.top;
   const sh = (cont.clientHeight - 10*2) / height;
   scale.value = Math.min(sw, sh);
-  
+
 }
 
 watch(containerRef, setInitialScale);
@@ -44,9 +44,14 @@ watch(containerRef, setInitialScale);
 function cssStyles(v: Villager) {
   const localX = v.Pos[0] - boundingBox.left;
   const localY = v.Pos[2] - boundingBox.top;
+  const f: Record<string, any> = {};
+  if(props.filter && props.filter.includes(v)) {
+    f.backgroundColor = 'red'
+  }
   return {
     top: `${localY * scale.value + 10}px`,
     left: `${localX * scale.value + 10}px`,
+    ...f
   }
 }
 </script>
@@ -70,7 +75,7 @@ function cssStyles(v: Villager) {
       background-color: green;
       transform: translate(-50%, -50%);
     }
-    
+
     .multiline {
       display: flex;
       flex-direction: column;
