@@ -1,20 +1,13 @@
 import type {Villager} from '@/types';
 import {translateProfession} from '@/minecraft/profession';
 import translation from '@/minecraft/ru.json'
+import {getItemDescription} from './item-description'
 
 function itemSearchIndex(item: any) {
   const id = item.id.replace('minecraft:', '')
-  const name = translation[`item.minecraft.${id}`]
-  const enchant = item.components?.['minecraft:stored_enchantments']?.levels;
-  if(enchant) {
-    const eid = Object.keys(enchant)[0].replace('minecraft:', '');
-    if(eid) {
-      const eName = translation[`enchantment.minecraft.${eid}`];
-      if(eName) {
-        return `${name} (${eName})`
-      }
-    }
-  }
+  const name = translation[`item.minecraft.${id}`];
+  const descr = getItemDescription(item);
+  if (descr) return `${name} (${descr})`
   return name;
 }
 
