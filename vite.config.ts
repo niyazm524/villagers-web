@@ -15,4 +15,6 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  // base: "/villagers-web",
+  base: process.env.NODE_ENV === "production" ? "/villagers-web/" : "/",
 })

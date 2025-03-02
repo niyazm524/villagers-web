@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+  import {pathPrefix} from '@/path-prefix';
   import {computed} from 'vue'
 const props = defineProps<{
     item: Record<string, any>;
@@ -9,7 +10,7 @@ const itemImage = computed(() => {
     if (!stripped) return "";
     if(stripped === 'crossbow')
       stripped = 'crossbow_standby'
-    return `/images/item/${stripped}.png`;
+    return pathPrefix(`/images/item/${stripped}.png`);
 });
 
 const src = computed(() => 'url('+itemImage.value+')');

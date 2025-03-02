@@ -4,8 +4,9 @@ import type {Villager} from '@/types';
 import {translateProfession, professionPicture} from '@/minecraft/profession';
 import {getLevelInfo} from '@/minecraft/level';
 import VillagerRecipe from './VillagerRecipe.vue';
+import {pathPrefix} from '@/path-prefix';
 
-const props = defineProps<{
+const props = defineProps<{   
   villager: Villager;
 }>()
 
@@ -14,7 +15,7 @@ const profession = computed(() => {
 })
 
 const picture = computed(() => {
-  return professionPicture(props.villager);
+  return pathPrefix(professionPicture(props.villager));
 })
 
 const level = computed(() => {
@@ -52,33 +53,32 @@ const expanded = ref(false);
     box-sizing: border-box;
     border: v-bind(color) solid 1px;
     border-radius: 4px;
-
+      
     .heading {
       display: flex;
       padding: 8px;
       column-gap: 8px;
-      cursor: pointer;
-
+      
       .expand-icon {
         transition: all 0.3s ease-in-out;
         transform: none;
       }
     }
-
+    
     &.expanded .heading .expand-icon {
       transform: rotate(180deg);
     }
     .grow {
     flex: 1 0;
     }
-
+    
     .multiline {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       column-gap: 8px;
     }
-
+    
     .recipes {
       display: flex;
       flex-direction: column;
